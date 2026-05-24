@@ -127,11 +127,13 @@ X-Forwarded-For: 172.19.0.1, 172.19.0.5, 172.19.0.4
   
 Поддельный X-Forwarded-For от клиента не попадает в приложение.
 Проверяем:
+
+```
 irina@kubbernetes:~/test$ curl -s \
 >   -H "X-Forwarded-For: 1.2.3.4" \
 >   http://176.123.160.109:8081 | grep X-Forwarded-For
 X-Forwarded-For: 172.19.0.1, 172.19.0.5
-
+```
 
 Каждый reverse proxy добавляет только доверенные адреса в цепочку X-Forwarded-For.
 Можно увидеть все это на сервере с внешним IP 176.123.160.109 пароль 1978Happy$
