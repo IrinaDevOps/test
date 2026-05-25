@@ -156,3 +156,15 @@ X-Forwarded-For: 172.19.0.1, 172.19.0.5
 
 **Каждый reverse proxy добавляет только доверенные адреса в цепочку X-Forwarded-For.**
 
+**Что касается docker-compose.yml**
+**Можно увидеть реальный source и destination**
+```
+irina@kubbernetes:~$ docker inspect nginx1
+[
+"Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/home/irina/test/nginx1/nginx.conf",
+                "Destination": "/etc/nginx/nginx.conf",
+                "Mode": "ro",
+```
