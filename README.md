@@ -106,8 +106,9 @@ Accept: */*
 X-Forwarded-For: 172.19.0.1, 172.19.0.5
 ```
 
-**запрос пошёл по более короткому маршруту: client -> nginx1 -> nginx3 -> app, поэтому приложение увидело: X-Forwarded-For: 172.19.0.1, 172.19.0.5
-в nginx1 настроен upstream с балансировкой:**
+**запрос пошёл по более короткому маршруту: client -> nginx1 -> nginx3 -> app, поэтому приложение увидело: X-Forwarded-For: 172.19.0.1, 172.19.0.5**
+
+**в nginx1 настроен upstream с балансировкой:**
 ```
 upstream backend {
     server nginx2:80;
