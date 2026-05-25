@@ -154,5 +154,5 @@ irina@kubbernetes:~/test$ curl -s \
 X-Forwarded-For: 172.19.0.1, 172.19.0.5
 ```
 
-Каждый reverse proxy добавляет только доверенные адреса в цепочку X-Forwarded-For.
-Можно увидеть все это на сервере с внешним IP 176.123.160.109 пароль 1978Happy$
+**Каждый reverse proxy добавляет только доверенные адреса в цепочку X-Forwarded-For.**
+
