@@ -53,7 +53,7 @@ nginx2 nginx3
   ↓       ↓
  app     app
 ```
-Тогда nginx1 имеет upstream из нескольких nginx
+**Тогда nginx1 имеет upstream из нескольких nginx**
 
 **Вариант цепочки proxy**
 ```
