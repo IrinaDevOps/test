@@ -156,7 +156,7 @@ X-Forwarded-For: 172.19.0.1, 172.19.0.5
 
 **Каждый reverse proxy добавляет только доверенные адреса в цепочку X-Forwarded-For.**
 
-**Что касается docker-compose.yml**
+## Что касается docker-compose.yml
 
 **Можно увидеть реальный source и destination**
 ```
