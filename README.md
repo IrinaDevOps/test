@@ -120,7 +120,8 @@ upstream backend {
 либо nginx3
 
 **Поэтому получаются разные цепочки**
-**Иногда:
+
+**Иногда:**
 
 **client -> nginx1 -> nginx2 -> nginx3 -> app**
 
