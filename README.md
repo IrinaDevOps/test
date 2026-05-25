@@ -38,6 +38,7 @@ upstream backend {
 **- либо в nginx3, то есть nginx1 выполняет роль reverse proxy, балансировщика нагрузки**
 
 **nginx3 - последний reverse proxy перед приложением, он не балансирует, он просто передает запрос в приложение:**
+
 **nginx3 -> app, поэтому**
 ```                                                                                                                                                                                   upstream app_backend {
     server app:80;
